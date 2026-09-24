@@ -33,9 +33,9 @@ export function Masthead() {
       </Link>
       <nav className="masthead-nav" aria-label="Primary">
         {items.map((item) => (
-          <a key={item.href} href={item.href}>
+          <Link key={item.href} href={item.href}>
             {item.label}
-          </a>
+          </Link>
         ))}
       </nav>
       <details ref={menu} className="masthead-menu">
@@ -44,13 +44,13 @@ export function Masthead() {
         </summary>
         <nav className="masthead-drawer" aria-label="Primary menu">
           {items.map((item) => (
-            <a
+            <Link
               key={item.href}
               href={item.href}
               onClick={() => menu.current?.removeAttribute("open")}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </details>
