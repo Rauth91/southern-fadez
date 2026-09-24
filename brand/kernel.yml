@@ -1,0 +1,46 @@
+client: "Southern Fadez"
+one_line: "A barbershop on Airline Highway in Prairieville"
+audience: "Men and families in Prairieville and Ascension Parish who want a reliable cut and a shop they enjoy spending time in"
+page_job: "Make Southern Fadez look like Prairieville's sharpest chair while clearly presenting its services, barbers, shop, and story without promotional calls to action"
+feeling: "Cinematic, masculine, premium, and welcoming: the approved original concept brought to life"
+
+world:
+  materials:
+    - "worn leather"
+    - "dark wood"
+    - "blackened steel"
+    - "aged brass"
+    - "bottle glass"
+    - "brick"
+    - "barber-chair chrome"
+  artifacts:
+    - "clippers"
+    - "straight razor"
+    - "comb"
+    - "hydraulic chair"
+    - "mirror"
+    - "shop towel"
+  vernacular:
+    - "chair"
+    - "fade"
+    - "line up"
+    - "skin fade"
+    - "Airline Hwy"
+    - "Suite B"
+  reference_object: "A worn leather barber chair under amber shop lamps"
+
+temperature:
+  formality: "professional"
+  density: "dense"
+  volume: "declarative"
+
+direction: "engraved"
+photography: "generated campaign set approved for the design prototype; truthful client photography still required before launch"
+signature_thesis: "A forest-green curtain pulls away to reveal the barber, the headline, and the chair in one cinematic opening"
+constraint: "Match the owner-approved reference composition without inventing ratings, reviews, or business claims"
+anti:
+  - "minimalist gallery experiments"
+  - "bright salon templates"
+  - "generic rounded service cards"
+  - "fake ratings or review counts"
+  - "rounded card grids"
