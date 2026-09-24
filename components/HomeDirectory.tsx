@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { BarberFeature } from "@/components/BarberFeature";
 import { ShopBoard } from "@/components/ShopBoard";
 import { StoryMotion } from "@/components/StoryMotion";

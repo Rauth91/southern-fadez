@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { site, visibleBarbers } from "@/lib/site";
 
 export const metadata: Metadata = {

@@ -485,7 +485,8 @@
     width: clamp(30rem, 62vw, 50rem);
     aspect-ratio: 1206 / 587;
     transform: rotate(-4deg);
-    background: url("/brand/southern-fadez-lockup.svg") center / contain no-repeat;
+    background: var(--wordmark-image, url("/brand/southern-fadez-lockup.svg"))
+      center / contain no-repeat;
     content: "";
     mix-blend-mode: multiply;
     opacity: 0.055;
@@ -870,7 +871,8 @@
     width: 24rem;
     aspect-ratio: 1206 / 587;
     transform: rotate(-3deg);
-    background: url("/brand/southern-fadez-lockup.svg") center / contain no-repeat;
+    background: var(--wordmark-image, url("/brand/southern-fadez-lockup.svg"))
+      center / contain no-repeat;
     content: "";
     mix-blend-mode: multiply;
     opacity: 0.05;
@@ -1833,7 +1835,8 @@
     width: clamp(38rem, 72vw, 72rem);
     aspect-ratio: 1206 / 587;
     transform: translateY(-50%) rotate(-1.25deg);
-    background: url("/brand/southern-fadez-lockup.svg") center / contain no-repeat;
+    background: var(--wordmark-image, url("/brand/southern-fadez-lockup.svg"))
+      center / contain no-repeat;
     content: "";
     mix-blend-mode: multiply;
     opacity: 0.12;

@@ -1,4 +1,4 @@
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import { ServiceList } from "@/components/ServiceList";
 import { featuredServices } from "@/lib/site";
 

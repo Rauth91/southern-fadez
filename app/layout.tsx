@@ -1,8 +1,10 @@
+import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import { Bodoni_Moda, IBM_Plex_Sans } from "next/font/google";
 import Script from "next/script";
 import { Footer } from "@/components/Footer";
 import { Masthead } from "@/components/Masthead";
+import { withBase } from "@/lib/base-path";
 import { site } from "@/lib/site";
 import "./globals.css";
 
@@ -51,6 +53,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${display.variable} ${sans.variable} h-full antialiased`}
+      style={
+        {
+          "--wordmark-image": `url("${withBase("/brand/southern-fadez-lockup.svg")}")`,
+        } as CSSProperties
+      }
     >
       <body className="min-h-full bg-forest font-sans text-ivory">
         <Script id="reset-scroll-on-load" strategy="beforeInteractive">

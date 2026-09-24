@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { AssetImage as Image } from "@/components/AssetImage";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { StoryMotion } from "@/components/StoryMotion";
@@ -12,6 +12,8 @@ type BarberPageProps = {
 export function generateStaticParams() {
   return visibleBarbers.map((barber) => ({ slug: barber.slug }));
 }
+
+export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
