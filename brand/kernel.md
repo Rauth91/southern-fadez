@@ -4,11 +4,11 @@ Selected from the client concept (2026-09-02). Restored after a Line-Up pass.
 
 ## Positioning
 
-A Prairieville barbershop that sells the chair. **Good cuts. Good company.** Established 2016. Founder Chaz (Darth Fadez). Crew: Chaz, Jay, Trey, Caleb.
+A Gonzales barbershop that sells the chair. **Good cuts. Good company.** Established 2016. Founder Chaz (Darth Fadez). Crew: Chaz, Keenan, Logan, and Jaden.
 
 ## Audience
 
-Men and families in Prairieville / Ascension Parish who want a fade that holds and a shop that still feels like a shop.
+Men and families in Gonzales / Ascension Parish who want a fade that holds and a shop that still feels like a shop.
 
 ## Primary job of the site
 

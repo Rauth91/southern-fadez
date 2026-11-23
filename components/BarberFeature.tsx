@@ -7,13 +7,13 @@ import { visibleBarbers } from "@/lib/site";
 
 const chairMatches = [
   { label: "Skin fade", barber: "chaz" },
-  { label: "Taper", barber: "jay" },
-  { label: "Kids / first fade", barber: "trey" },
-  { label: "Beard / bald fade", barber: "caleb" },
 ] as const;
 
 export function BarberFeature() {
-  const [activeSlug, setActiveSlug] = useState(visibleBarbers[0].slug);
+  const [activeSlug, setActiveSlug] = useState(
+    visibleBarbers.find((barber) => barber.theCutUrl)?.slug ??
+      visibleBarbers[0].slug,
+  );
   const activeIndex = visibleBarbers.findIndex(
     (barber) => barber.slug === activeSlug,
   );
@@ -21,7 +21,7 @@ export function BarberFeature() {
   const visibleChairMatches = chairMatches.filter((match) =>
     visibleBarbers.some((barber) => barber.slug === match.barber),
   );
-  const hasConceptRoster = visibleBarbers.length > 1;
+  const hasFullRoster = visibleBarbers.length > 1;
   const indicatorPosition = {
     "--chair-x": `${(activeIndex % 2) * 100}%`,
     "--chair-y": `${Math.floor(activeIndex / 2) * 100}%`,
@@ -33,7 +33,7 @@ export function BarberFeature() {
       id="barbers"
       className="story-barber story-motion-chapter"
       data-barber={active.slug}
-      data-roster={hasConceptRoster ? "concept" : "single"}
+      data-roster={hasFullRoster ? "multiple" : "single"}
       aria-labelledby="barber-title"
     >
       <div key={active.image} className="story-barber-media-swap">
@@ -41,8 +41,9 @@ export function BarberFeature() {
           src={active.image}
           alt={active.imageAlt}
           fill
+          priority
           className="story-barber-image object-cover"
-          sizes="100vw"
+          sizes="(min-width: 64rem) 38vw, (min-width: 42rem) 42vw, 100vw"
         />
         <div className="story-barber-shade" />
       </div>
@@ -54,20 +55,13 @@ export function BarberFeature() {
           className="story-barber-copy-inner"
           aria-live="polite"
         >
-          <div
-            className="story-barber-count"
-            aria-label={`Barber ${activeIndex + 1} of ${visibleBarbers.length}`}
-          >
-            <span>{String(activeIndex + 1).padStart(2, "0")}</span>
-            <span>{String(visibleBarbers.length).padStart(2, "0")}</span>
-          </div>
-          <p className="approved-kicker">The hand behind it</p>
+          <p className="approved-kicker">Choose your barber</p>
           <h2 id="barber-title">{active.name}.</h2>
           <p className="story-barber-role">{active.role}</p>
           {active.aka ? <p className="story-barber-aka">{active.aka}</p> : null}
           <p className="story-barber-note">{active.short}</p>
           <p className="story-barber-history">{active.story}</p>
-          {hasConceptRoster ? (
+          {visibleChairMatches.length > 1 ? (
             <div className="story-barber-match">
               <p>Start with the cut.</p>
               <div role="group" aria-label="Find a barber by specialty">
@@ -85,13 +79,13 @@ export function BarberFeature() {
             </div>
           ) : null}
           <Link href={`/barbers/${active.slug}`} className="story-barber-profile-link">
-            Meet {active.name}
+            Profile + booking
             <span aria-hidden="true">↗</span>
           </Link>
         </article>
       </div>
 
-      {hasConceptRoster ? (
+      {hasFullRoster ? (
         <div
           className="story-barber-selector story-fade"
           role="group"

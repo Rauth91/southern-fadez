@@ -24,10 +24,11 @@ export function StoryMotion({ children }: { children: ReactNode }) {
           const supporting = chapter.querySelectorAll<HTMLElement>(".story-fade");
           const drawnLines =
             chapter.querySelectorAll<HTMLElement>(".story-line-draw");
-          const trigger =
-            chapter.querySelector<HTMLElement>(
-              ".approved-kicker, .approved-section-label, .story-reveal, h1, h2",
-            ) ?? chapter;
+          const trigger = chapter.matches(".barber-profile-hero")
+            ? chapter
+            : chapter.querySelector<HTMLElement>(
+                ".approved-kicker, .approved-section-label, .story-reveal, h1, h2",
+              ) ?? chapter;
           const timeline = gsap.timeline({
             scrollTrigger: {
               trigger,

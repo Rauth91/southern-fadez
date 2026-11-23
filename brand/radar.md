@@ -13,7 +13,7 @@
 - **Current:** individual barber profiles, transparent duration and price, a practical visit block, and real work photography.
 - **Emerging locally:** matching a visitor to a barber by the cut they want, and showing useful live shop status without forcing a booking flow.
 - **Saturated:** large generic galleries, four-card review grids, repeated booking buttons, “premium/luxury/elite” claims, and every section using the same title-copy-button formula.
-- **AI cliché risk:** dark luxury palette plus giant serif copy plus gold rules when none of it connects to a real shop detail. Southern Fadez avoids this by tying the interface to Suite B, four specific chairs, actual services, and Airline Highway.
+- **AI cliché risk:** dark luxury palette plus giant serif copy plus gold rules when none of it connects to a real shop detail. Southern Fadez avoids this by tying the interface to Suite E, four specific chairs, actual services, and Highway 621.
 
 ## What Southern Fadez borrows
 

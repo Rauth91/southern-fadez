@@ -3,9 +3,9 @@
 ## Approved brief
 
 - **Stays:** the owner-approved reference composition, deep forest green, warm ivory, antique gold, full-bleed barber photography, squared geometry, and high-contrast condensed headlines.
-- **Changes:** translate the reference into real responsive code, replace unverified review figures with true shop facts, use the exact traced logo as a supporting brand artifact rather than forcing its wide lockup into every small space, and remove promotional calls to action across the site.
+- **Changes:** make booking the primary site path, move barber choice directly after the hero, treat services as appointment context rather than the opening message, and make individual profiles useful enough to choose and book a chair. The owner rejected the oversized full-bleed profile treatment and approved a calmer split layout with a complete full-length portrait and booking built into the identity panel.
 - **Must not be lost:** the homepage must remain recognisably the original idea. It cannot become a minimalist redesign, a mirror installation, or an unrelated creative concept.
-- **The page must cause:** immediate confidence in the shop and a clear understanding of its services, people, room, and history without pushing the visitor toward an action.
+- **The page must cause:** immediate confidence, then a fast choice of barber and a clear route to that barber's verified booking page. Walk-in visitors should still know they are welcome when a chair is open.
 
 ## Direction
 
@@ -23,7 +23,7 @@ Forest is the structural brand ground, ivory is the service ledger, antique gold
 
 ## Layout
 
-The masthead and opening hero follow the approved reference closely, and the opening is the only full-height section with truly massive type. The rest of the homepage changes material and scale so it stops competing with that hero: craft and three signature prices sit in an ivory editorial spread beside a contained tool still life; the barber selector becomes the secondary feature in a structured portrait-and-copy split; the room compresses into a wide cinematic band with a quiet caption; and the origin closes as an ivory story spread with an offset storefront photograph. Choosing a barber still changes the portrait, name, role, chair note, story, and profile link as one matched preview. Each barber opens into a dedicated profile with the same hero, editorial about section, chair notes, specialties, and crew rail.
+The masthead and opening hero keep the approved reference composition, but the first action now sends visitors to choose a barber. The homepage order becomes hero, barber selector, services and walk-in policy, room, founder story, then the practical shop board. Individual profiles use an owner-approved split opening: a contained full-length portrait that preserves the complete person and chair beside a compact identity and booking panel, followed directly by useful chair notes and a photographic crew rail. Profile names remain distinctive without covering the face or repeating as a second oversized booking headline.
 
 ## Signature
 
@@ -35,15 +35,15 @@ The client-supplied lockup remains the exact traced vector with its original bla
 
 ## Imagery
 
-A generated campaign set establishes the approved visual system: one working-barber hero, tool still life, featured-barber portrait, empty shop interior, and blue-hour storefront. Every active frame shares neutral charcoal shadows, natural skin and material color, warm amber practical light, worn leather, dark wood, and restrained gold. Green stays in the interface instead of tinting the photographs. These remain concept images and must be replaced with truthful Southern Fadez photography before public launch unless the owner explicitly approves generated representation.
+The confirmed crew roster uses client-supplied portraits of Keenan Louviere, Logan Eubanks, Jaden Guitreau, and Chaz Boudreaux. These portraits remain the truthful center of the booking flow. Because the first round of client-supplied room photographs was portrait-oriented, blown out, and difficult to crop without distortion, three temporary AI-assisted room photographs based on the real green walls, bronze ceiling, mirrors, chairs, and wash stations are in use until better room photography arrives. No synthetic people are used.
 
 ## Interaction rule
 
-The owner has removed every general promotional call to action from the site. Navigation is the primary interactive hierarchy: the compact menu appears below desktop width, the inline navigation appears at desktop width, and the two patterns are never visible together. The later request for individual barber profiles adds a contextual “Meet [name]” link from the homepage. A newer explicit request adds one practical exception inside each barber profile: when that barber's verified TheCut URL is available, a compact utility link opens their current prices and appointment schedule. It remains subordinate to the portrait and story rather than becoming another hero. Phone numbers remain plain information rather than click-to-call actions.
+Booking is now the primary interactive hierarchy. The masthead's first destination is “Book,” the hero sends visitors to choose a barber, and each profile integrates its booking action into the opening identity panel beside the portrait. A verified individual booking URL opens that barber's current prices and schedule. Until the remaining links are supplied, those profiles use the shop phone only as an honest availability fallback rather than sending visitors to Chaz's personal booking page. The compact menu remains below desktop width and the inline navigation remains at desktop width.
 
-The multi-barber roster is explicitly a review-mode concept so Chaz can evaluate how future chairs fit the design. One launch switch controls every public roster surface and profile route. It remains on during approval, then changes the site to a truthful Chaz-only experience without deleting the future-ready component system.
+The multi-barber roster now reflects the client-confirmed four-person crew and remains visible across every roster surface and profile route. Only verified Chaz specialties and booking information are published; the other profiles stay intentionally factual until the client supplies their bios, specialties, and booking links.
 
-The competitor-informed feature pass adds utility without adding promotional pressure. “Start with the cut” lets a visitor select a specialty and immediately updates the existing matched barber portrait and profile. The name rail uses each barber’s chair-side photograph as the full selector surface, with the name and role overlaid against a dark lower shade. It sits as a vertical chair roster on the right at desktop widths, echoing the approved reference, then returns to a bottom rail on tablet and a two-by-two selector on mobile. A compact shop board at the end of the homepage shows live open/closed state based on regular Central Time hours, today’s schedule, address, and phone. It stays deliberately smaller than the origin spread so the page keeps one hero and one clear visual hierarchy.
+The competitor-informed feature pass adds utility without adding promotional pressure. “Start with the cut” stays hidden until the client supplies enough verified specialties to make those recommendations honest. The name rail uses each barber’s chair-side photograph as the full selector surface, with the name and role overlaid against a dark lower shade. It sits as a vertical chair roster on the right at desktop widths, echoing the approved reference, then returns to a bottom rail on tablet and a two-by-two selector on mobile. A compact shop board at the end of the homepage shows live open/closed state based on regular Central Time hours, today’s schedule, address, and phone. It stays deliberately smaller than the origin spread so the page keeps one hero and one clear visual hierarchy.
 
 ## Risk
 
@@ -55,4 +55,10 @@ The supplied original concept is the primary visual reference because the owner 
 
 ## Build scope
 
-The earlier prototype slice was rejected because its unrelated stock photography and altered proportions still read as an interpretation. The approved rebuild keeps the original hero and brand world, then follows a narrative order: masthead, hero, craft with three signature services, Chaz, the room, the origin and storefront, then footer. Review the complete homepage at 390 / 768 / 1440 before carrying the photographic system through Crew, Shop, Story, and barber profiles.
+The earlier prototype slice was rejected because its unrelated imagery and altered proportions still read as an interpretation. The approved rebuild keeps the original brand world, then follows a narrative order: masthead, real-shop hero, craft and prices, the barber roster, the room, Chaz's origin story, then the practical shop board and footer. The owner explicitly approved completing this photo-truth refresh without another slice checkpoint. Review the complete homepage at 390 / 768 / 1440 before carrying the photographic system through Crew, Shop, Story, and barber profiles.
+
+## Owner-review polish
+
+The owner-review build carries the approved campaign treatment through every route instead of switching to a brighter, mixed-source photo set after the homepage. Primary navigation opens the complete Cuts, Crew, Shop, and Story pages and marks the current destination; the masthead stays available while scrolling because navigation is the site’s main utility. The homepage composition, palette, typography, and non-promotional tone remain unchanged.
+
+The owner gave autonomous approval to resolve the profile composition on wide screens. Barber openings now sit inside a centered editorial stage instead of stretching indefinitely with the viewport. The full 2:3 portraits grow on desktop without cropping or distortion, while the booking panel keeps a measured line length and balanced outer space. On extra-wide screens the portrait and stage step up together rather than leaving dead margins. The profile column is anchored by the crew return at the top, identity and booking in the middle, and the real Highway 621 address at the bottom; no invented specialties are used to fill space.

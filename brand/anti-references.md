@@ -25,4 +25,4 @@ What the corridor already means. Do not copy.
 
 ## Southern Fadez wedge
 
-The fade as craft. The Z. Airline Hwy, Suite B. Chaz / Darth Fadez. Not a team shop, not a clothing brand, not a 1920s club.
+The fade as craft. The Z. Highway 621, Suite E. Chaz / Darth Fadez. Not a clothing brand and not a 1920s club.

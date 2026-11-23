@@ -1,13 +1,14 @@
 # Southern Fadez — Design Discovery Research
 
-Status: evidence gathered from public listings. Several facts are unverified with the client and marked as assumptions.
+Status: public-listing research reconciled with location and hours confirmed by the owner on 2026-11-23.
 
 ## Business
 
 - **Name:** Southern Fadez (spelled with a Z — distinct from Southern Fades, Greeneville TN)
-- **Likely location:** 17357 Airline Hwy, Suite B, Prairieville, LA 70769
+- **Confirmed location:** 38058 LA-621 Ste E, Gonzales, LA 70737
+- **Confirmed hours:** Mon–Thu 9–6; Fri 8:30–6; Sat 8:30–2:30; Sun closed
 - **Likely phone:** (225) 323-2044
-- **Market:** Ascension Parish / Baton Rouge metro suburb, dense barbershop corridor along Airline Highway
+- **Market:** Gonzales / Ascension Parish / Baton Rouge metro
 
 ## Online presence (as of 2026-09-02)
 
@@ -15,7 +16,7 @@ Status: evidence gathered from public listings. Several facts are unverified wit
 - Aggregator listing on localitybiz (classified as “hair salon”)
 - a theCut profile URL exists (`app.thecut.co/barbers/SouthernFadez`) but currently 404s
 - No reliable Instagram, Google Business, or review corpus found under this exact name
-- Address overlap with “The Barbershop Prairieville WALK-IN’S” (143 reviews, 4.3) — may be a chair rental, a rename, or a listing collision. Confirm.
+- Older public listings showed a different Prairieville address; the owner-confirmed Gonzales address supersedes them.
 
 ## Name collision
 
@@ -31,25 +32,25 @@ Status: evidence gathered from public listings. Several facts are unverified wit
 | The Refined Barber (Geismar) | Family classic, patient with kids | Squire booking page only |
 | The Beard Co | Beard specialist, same highway | Listings |
 
-Airline Hwy is a strip of competing chairs. A website that only says “sharp fades, book now” will disappear into that corridor.
+Ascension Parish has a dense field of competing chairs. A website that only says “sharp fades, book now” will disappear into that field.
 
 ## Audience (inferred)
 
-Prairieville is a growing suburban parish: families, shift workers, high-school and college-age clients, men who want a reliable fade without driving into Baton Rouge. The Z spelling points toward contemporary fade culture, not a gentleman’s club.
+Gonzales and the surrounding parish serve families, shift workers, high-school and college-age clients, and men who want a reliable fade without driving into Baton Rouge. The Z spelling points toward contemporary fade culture, not a gentleman’s club.
 
 Primary jobs for the site:
 
 1. Confirm this is the right shop (name, place, hours)
 2. Prove the work (real cuts, not stock)
 3. Book, call, or get directions in under 15 seconds on a phone
-4. Separate from the TN namesake and the Airline Hwy neighbors
+4. Separate from the TN namesake and nearby competitors
 
 ## Content gaps
 
-Missing until the client supplies them: logo, photography, hours, service menu/prices, barber names, booking URL, walk-in policy, whether this is one chair or a shop.
+Remaining gaps: replacement room photography, confirmed booking URLs for every barber, and verified shop policies beyond the walk-in guidance already supplied.
 
 ## Assumptions (must confirm)
 
-- Prairieville, LA is the correct business
+- Gonzales, LA is the correct business
 - Fade work is the craft identity, not vintage shaves or hair systems
 - The site’s job is local conversion, not e-commerce

@@ -6,7 +6,7 @@ Shared constraints for all three:
 
 - Mobile-first: most people will open this from Instagram, Maps, or a text
 - One primary action: Book / Call
-- Real Prairieville facts, not invented luxury
+- Real Gonzales facts, not invented luxury
 - No black-and-gold gentleman template
 - No TN Southern Fades clone
 
@@ -16,7 +16,7 @@ Shared constraints for all three:
 
 **Thesis:** The site is built like a fade. A hard vertical edge (the lineup) holds type and navigation. Content then blends out — tight, then open — the way a fade leaves the hairline.
 
-**Why it fits:** The name is Southern *Fadez*. The Z already signals contemporary fade culture, not a 1920s shop. Airline Hwy competitors own sports, merch, and old-school. Nobody owns the craft geometry of the cut itself.
+**Why it fits:** The name is Southern *Fadez*. The Z already signals contemporary fade culture, not a 1920s shop. Local competitors own sports, merch, and old-school. Nobody owns the craft geometry of the cut itself.
 
 **Visual tension:** Clipper precision × Louisiana heat. Industrial tool language against humid, informal Southern speech.
 
@@ -46,9 +46,9 @@ Shared constraints for all three:
 
 ## Territory 2 — Shopfront After Dark
 
-**Thesis:** The site is the storefront on Airline Hwy at dusk. Channel-letter honesty. Hours as a lit sign. You look through a window, not a lifestyle campaign.
+**Thesis:** The site is the storefront on Highway 621 at dusk. Channel-letter honesty. Hours as a lit sign. You look through a window, not a lifestyle campaign.
 
-**Why it fits:** Prairieville clients need to know where it is, when it’s open, and that it’s a real shop in a real strip. Trust comes from being locatable and open, not from luxury claims.
+**Why it fits:** Gonzales clients need to know where it is, when it’s open, and that it’s a real shop in a real strip. Trust comes from being locatable and open, not from luxury claims.
 
 **Visual tension:** Highway commercial × sign-painter craft.
 
@@ -66,7 +66,7 @@ Shared constraints for all three:
 
 **Mobile:** The window becomes a stacked sign — name, hours, book, then the list.
 
-**Signature idea:** Live shop-status as the hero. “Open till 7 · Suite B · Airline Hwy” is the headline.
+**Signature idea:** Live shop-status as the hero. “Open till 6 · Suite E · Highway 621” is the headline.
 
 **Cliché risk:** Retro diner neon, Route 66, generic Americana.
 
@@ -112,6 +112,6 @@ Shared constraints for all three:
 
 **Territory 1 — The Line-Up.**
 
-It is the only direction that could only belong to a fade shop named Fadez. It gives the site a craft identity the Airline Hwy corridor does not have, while still supporting a ruthless mobile booking path.
+It is the only direction that could only belong to a fade shop named Fadez. It gives the site a specific craft identity while still supporting a ruthless mobile booking path.
 
 Borrow Shopfront’s insistence on real address/hours, and Next Chair’s refusal to hide the action under poetry. Do not borrow Shopfront neon or Next Chair’s SaaS calm as the whole look.

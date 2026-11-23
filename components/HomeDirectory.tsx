@@ -1,14 +1,13 @@
 import { AssetImage as Image } from "@/components/AssetImage";
 import { BarberFeature } from "@/components/BarberFeature";
-import { ShopBoard } from "@/components/ShopBoard";
 import { StoryMotion } from "@/components/StoryMotion";
-import { coreServices } from "@/lib/site";
-
-const signatureServices = coreServices.slice(0, 3);
+import { walkInServices } from "@/lib/site";
 
 export function HomeDirectory() {
   return (
     <StoryMotion>
+      <BarberFeature />
+
       <section
         id="services"
         className="story-craft story-motion-chapter"
@@ -18,32 +17,36 @@ export function HomeDirectory() {
           <div className="story-craft-content">
             <div className="story-craft-copy">
               <p className="approved-section-label story-line-label story-fade">
-                At the station
+                Appointments + walk-ins
                 <span className="story-line-draw" aria-hidden="true" />
               </p>
               <h2 id="craft-title">
                 <span className="story-reveal-mask">
-                  <span className="story-reveal">The detail</span>
+                  <span className="story-reveal">Book your time.</span>
                 </span>
                 <span className="story-reveal-mask">
-                  <em className="story-reveal">is the difference.</em>
+                  <em className="story-reveal">Walk-ins still welcome.</em>
                 </span>
               </h2>
               <p className="story-fade">
-                Clippers start it. The last pass sets it. A lineup has to hold
-                when you walk into the sun, not only under the shop lamps.
+                Appointments are the sure thing. If a chair is open, walk-ins
+                are welcome. The walk-in menu starts here.
               </p>
             </div>
 
             <dl
               className="story-craft-services story-fade"
-              aria-label="Signature services"
+              aria-label="Walk-in prices"
             >
-              {signatureServices.map((service) => (
+              {walkInServices.map((service) => (
                 <div key={service.name}>
-                  <dt>{service.name}</dt>
+                  <dt>
+                    <span>{service.name}</span>
+                    {service.description ? (
+                      <small>{service.description}</small>
+                    ) : null}
+                  </dt>
                   <dd>
-                    <span>{service.duration}</span>
                     <strong>{service.price}</strong>
                   </dd>
                 </div>
@@ -53,18 +56,16 @@ export function HomeDirectory() {
 
           <figure className="story-craft-visual story-fade">
             <Image
-              src="/images/tools-approved-v2.png"
-              alt="Clippers, shears, razor, and comb arranged at a barber station"
+              src="/images/shop-wash-clean.jpg"
+              alt="The wash stations inside Southern Fadez"
               fill
               className="story-craft-image object-cover"
               sizes="(min-width: 1024px) 46vw, calc(100vw - 2.5rem)"
             />
-            <figcaption>Tools down. One last look.</figcaption>
+            <figcaption>Between cuts, the room resets.</figcaption>
           </figure>
         </div>
       </section>
-
-      <BarberFeature />
 
       <section
         id="shop"
@@ -72,15 +73,15 @@ export function HomeDirectory() {
         aria-labelledby="room-title"
       >
         <Image
-          src="/images/shop-interior-approved-v2.png"
-          alt="Four leather barber chairs beneath warm shop lights"
+          src="/images/shop-interior-corrected.jpg"
+          alt="The Southern Fadez shop floor beneath its ornate bronze ceiling"
           fill
           className="story-room-image object-cover"
           sizes="100vw"
         />
         <div className="story-room-shade" />
         <div className="story-room-copy frame">
-          <p className="approved-kicker story-fade">Inside Suite B</p>
+          <p className="approved-kicker story-fade">Inside Suite E</p>
           <h2 id="room-title" className="story-fade">
             Four chairs. Lights turned low.
           </h2>
@@ -111,8 +112,8 @@ export function HomeDirectory() {
           </h2>
           <p className="story-origin-signature story-fade">Chaz</p>
           <p className="story-fade">
-            Southern Fadez began with one chair, a dream, and the belief that a
-            great haircut can change the way you feel about your day.
+            Southern Fadez began with one chair and a simple standard: the cut
+            has to hold when you step outside.
           </p>
           <p className="story-fade">
             The room grew to four chairs. The standard stayed the same: tell
@@ -123,19 +124,15 @@ export function HomeDirectory() {
 
         <figure className="story-origin-visual story-fade">
           <Image
-            src="/images/storefront-approved-v2.png"
-            alt="The Southern Fadez storefront glowing at dusk"
-            fill
-            className="story-origin-image object-cover"
-            sizes="(min-width: 1024px) 54vw, calc(100vw - 2.5rem)"
+            src="/images/barber-chaz-boudreaux.jpg"
+            alt="Southern Fadez founder Chaz Boudreaux in his shop"
+            width={1280}
+            height={1920}
+            className="story-origin-image"
+            sizes="(min-width: 1024px) 42rem, (min-width: 672px) 46vw, calc(100vw - 2.5rem)"
           />
-          <figcaption className="story-origin-mark" aria-hidden="true">
-            Southern Fadez
-          </figcaption>
         </figure>
       </section>
-
-      <ShopBoard />
     </StoryMotion>
   );
 }
