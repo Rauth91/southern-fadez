@@ -122,7 +122,7 @@ export const barbers: Barber[] = [
     image: "/images/barber-logan-eubanks.jpg",
     imageAlt: "Logan Eubanks inside Southern Fadez",
     specialties: [],
-    theCutUrl: null,
+    theCutUrl: "https://app.thecut.co/barbers/LoStylez",
   },
   {
     slug: "jaden-guitreau",
