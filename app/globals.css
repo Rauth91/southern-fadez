@@ -1735,7 +1735,7 @@
 
   .barber-profile-services li {
     display: flex;
-    min-height: 3.2rem;
+    min-height: 3.45rem;
     align-items: center;
     justify-content: space-between;
     gap: 1.5rem;
@@ -1744,6 +1744,20 @@
     font-weight: 500;
     letter-spacing: 0.07em;
     text-transform: uppercase;
+  }
+
+  .barber-profile-service-copy {
+    display: grid;
+    gap: 0.22rem;
+    padding-block: 0.72rem;
+    line-height: 1.35;
+  }
+
+  .barber-profile-service-copy small {
+    color: var(--ink-muted);
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
   }
 
   .barber-profile-services a {
@@ -1757,6 +1771,15 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
     text-underline-offset: 0.25em;
+  }
+
+  .barber-profile-services-note {
+    display: block;
+    max-width: 35ch;
+    margin: 0.45rem 0 0 1.35rem;
+    color: var(--ink-muted);
+    font-size: 0.65rem;
+    line-height: 1.5;
   }
 
   .barber-profile-roster {

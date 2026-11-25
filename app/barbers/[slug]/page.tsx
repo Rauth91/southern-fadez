@@ -43,6 +43,10 @@ export default async function BarberPage({ params }: BarberPageProps) {
   if (!barber) notFound();
 
   const firstName = barber.name.split(" ")[0];
+  const hasIndividualMenu = barber.services.length > 0;
+  const displayedServices = hasIndividualMenu
+    ? barber.services
+    : walkInServices.slice(0, 4);
   const personJsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
@@ -54,6 +58,20 @@ export default async function BarberPage({ params }: BarberPageProps) {
     worksFor: {
       "@id": absoluteUrl("/#barbershop"),
     },
+    ...(hasIndividualMenu
+      ? {
+          makesOffer: barber.services.map((service) => ({
+            "@type": "Offer",
+            price: service.price.replace("$", ""),
+            priceCurrency: "USD",
+            url: barber.theCutUrl,
+            itemOffered: {
+              "@type": "Service",
+              name: service.name,
+            },
+          })),
+        }
+      : {}),
   };
 
   return (
@@ -186,16 +204,37 @@ export default async function BarberPage({ params }: BarberPageProps) {
               </div>
             ) : null}
             <div className="barber-profile-services">
-              <p>Shop services</p>
+              <p>{hasIndividualMenu ? `${firstName}’s current menu` : "Shop services"}</p>
               <ul>
-                {walkInServices.slice(0, 4).map((service) => (
+                {displayedServices.map((service) => (
                   <li key={service.name}>
-                    <span>{service.name}</span>
+                    <span className="barber-profile-service-copy">
+                      <span>{service.name}</span>
+                      {"duration" in service && service.duration ? (
+                        <small>{service.duration}</small>
+                      ) : null}
+                    </span>
                     <span>{service.price}</span>
                   </li>
                 ))}
               </ul>
-              <Link href={homeSections.services}>View the full service menu</Link>
+              {hasIndividualMenu && barber.theCutUrl ? (
+                <>
+                  <a
+                    href={barber.theCutUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Book + confirm on {barber.bookingProvider}
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                  <small className="barber-profile-services-note">
+                    Prices shown as currently listed. Confirm when booking.
+                  </small>
+                </>
+              ) : (
+                <Link href={homeSections.services}>View the full service menu</Link>
+              )}
             </div>
           </aside>
         </section>

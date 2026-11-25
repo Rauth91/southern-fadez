@@ -70,6 +70,12 @@ export type WalkInService = {
   price: string;
 };
 
+export type BarberService = {
+  name: string;
+  price: string;
+  duration?: string;
+};
+
 export const walkInServices: WalkInService[] = [
   {
     name: "Regular haircut",
@@ -96,6 +102,8 @@ export type Barber = {
   image: string;
   imageAlt: string;
   specialties: string[];
+  services: BarberService[];
+  bookingProvider: string | null;
   theCutUrl: string | null;
 };
 
@@ -106,10 +114,20 @@ export const barbers: Barber[] = [
     role: "Barber",
     short: "Behind the chair on Highway 621.",
     story:
-      "Keenan is one of four barbers behind the chairs at Southern Fadez in Gonzales. Call the shop for his current availability; walk-ins are welcome when a chair is open.",
+      "Keenan is one of four barbers behind the chairs at Southern Fadez in Gonzales. His current service menu and available times are listed on Vagaro; walk-ins are welcome when a chair is open.",
     image: "/images/barber-keenan-louviere.jpg",
     imageAlt: "Keenan Louviere inside Southern Fadez",
     specialties: [],
+    services: [
+      { name: "Little Guy Chop — 12 and under", price: "$30" },
+      { name: "Gentlemen’s Cut — 13 and up", price: "$40" },
+      { name: "Gentlemen’s Cut with Beard Shaping", price: "$50" },
+      { name: "Mustache and Beard Trim", price: "$25" },
+      { name: "Gentlemen’s Color and Cut", price: "$75" },
+      { name: "Women’s Haircut", price: "$65" },
+      { name: "Straight-Razor Shave", price: "$30" },
+    ],
+    bookingProvider: "Vagaro",
     theCutUrl: "https://www.vagaro.com/barberingbykeenanl",
   },
   {
@@ -118,10 +136,29 @@ export const barbers: Barber[] = [
     role: "Barber",
     short: "One of four chairs at Southern Fadez.",
     story:
-      "Logan is part of the four-barber Southern Fadez crew in Gonzales. Call the shop for his current availability, or stop in when a chair is open.",
+      "Logan is part of the four-barber Southern Fadez crew in Gonzales. His current service menu and available times are listed on theCut, or stop in when a chair is open.",
     image: "/images/barber-logan-eubanks.jpg",
     imageAlt: "Logan Eubanks inside Southern Fadez",
     specialties: [],
+    services: [
+      {
+        name: "Just the Sides — no cut on top or bald fade",
+        price: "$25",
+        duration: "15 min",
+      },
+      { name: "Beards", price: "$25", duration: "30 min" },
+      { name: "Haircut", price: "$35", duration: "30 min" },
+      {
+        name: "Just the Sides Faded — no cut on top",
+        price: "$40",
+        duration: "30 min",
+      },
+      { name: "Tapers", price: "$40", duration: "30 min" },
+      { name: "Fades", price: "$50", duration: "45 min" },
+      { name: "Before-Hours Cut", price: "$100", duration: "1 hour" },
+      { name: "After-Hours Cut", price: "$100", duration: "1 hour" },
+    ],
+    bookingProvider: "theCut",
     theCutUrl: "https://app.thecut.co/barbers/LoStylez",
   },
   {
@@ -134,6 +171,8 @@ export const barbers: Barber[] = [
     image: "/images/barber-jaden-guitreau.jpg",
     imageAlt: "Jaden Guitreau inside Southern Fadez",
     specialties: [],
+    services: [],
+    bookingProvider: null,
     theCutUrl: null,
   },
   {
@@ -147,6 +186,8 @@ export const barbers: Barber[] = [
     image: "/images/barber-chaz-boudreaux-v2.jpg",
     imageAlt: "Chaz Boudreaux inside Southern Fadez",
     specialties: ["Skin fades", "Line ups", "Consistency"],
+    services: [],
+    bookingProvider: "theCut",
     theCutUrl: "https://search.thecut.co/barbers/SouthernFadez",
   },
 ];
