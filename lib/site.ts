@@ -110,7 +110,7 @@ export const barbers: Barber[] = [
     image: "/images/barber-keenan-louviere.jpg",
     imageAlt: "Keenan Louviere inside Southern Fadez",
     specialties: [],
-    theCutUrl: null,
+    theCutUrl: "https://www.vagaro.com/barberingbykeenanl",
   },
   {
     slug: "logan-eubanks",
